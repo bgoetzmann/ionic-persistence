@@ -1,14 +1,14 @@
 ionic-persistence
 =================
 
-ionic-persistence is simple [Ionic](http://ionicframework.com/) application based on the starter application demoing the Cordova support in [persistence.js](https://github.com/coresmart/persistencejs), in order to persist data with SQLitePlugin/WebSQL.
+ionic-persistence is a simple [Ionic](http://ionicframework.com/) application based on the starter application demoing the Cordova support in [persistence.js](https://github.com/coresmart/persistencejs), in order to persist data with SQLitePlugin/WebSQL.
 
-So, in ionic-persistence playlists can be saved in WebSQL database when running the application in a browser, and in a SQLite database when running as a mobile application, thanks to the [Cordova/PhoneGap SQLitePlugin](https://github.com/brodysoft/Cordova-SQLitePlugin) used by persistence.js.
+So, in ionic-persistence playlists can be saved in a WebSQL database when running the application in a browser, and in a SQLite database when running as a mobile application, thanks to the [Cordova/PhoneGap SQLitePlugin](https://github.com/brodysoft/Cordova-SQLitePlugin) used by persistence.js.
 
 Persistence.js was added to the application with a Bower command (`bower install persistence`), and at the time of this writing, the required file `persistence.store.cordovasql.js` was not present; so it was added by hand from [persistence.js](https://github.com/coresmart/persistencejs) GitHub repository.
 
-Saving playlist
----------------
+Saving playlists
+----------------
 
 The application's side menu item "Add Playlist" permits to save a playlist by using a form; when it submitted the AngularJS provider `Persistence` enters in action. 
 
