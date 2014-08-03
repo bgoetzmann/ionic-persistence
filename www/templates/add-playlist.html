@@ -1,0 +1,21 @@
+<div class="modal">
+  <ion-header-bar>
+    <h1 class="title">Add Playlist</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeAddDialog()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doAddDialog()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Playlist Name</span>
+          <input type="text" ng-model="playlistData.title">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">OK</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</div>
